@@ -1,0 +1,75 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    title Movie
+    link(rel="stylesheet" href="css/movie.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif|Cabin|Fjalla+One|Open+Sans+Condensed:300")
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js")
+    script 
+  body
+    .page
+      .menu
+        .link
+          a(href="index.html") Home
+          a(href="resume.html") Resume
+          a(href="SuicideSquad.html") Movie
+      .head
+        a(href="#" onclick="window.open(' youtube.html ', 'Youtube', config='height=1000,width=1100')") Watch Trailer
+      .inner_menu
+        .inner
+          a(href="#sto") Story
+          a(href="#cas") Cast
+          a(href="#de") Development
+          a(href="#box") Box Office
+      .story(id = "sto")
+        img(src="http://static.srcdn.com/wp-content/uploads/Suicide-Squad-Sucker-For-Pain-artwork.jpg")
+        h2 Story Line
+        p It feels good to be bad...Assemble a team of the world's most dangerous, incarcerated Super Villains, provide them with the most powerful arsenal at the government's disposal, and send them off on a mission to defeat an enigmatic, insuperable entity. 
+      .cast(id = "cas")
+        .case_overview
+          h2 Cast <br> Overview
+          p Four main actor in the movie, <br> and thier information.
+        .actor
+          .show
+            .actor_info.deadshot
+              .info
+                h2 Deadshot
+                p Deadshot (Floyd Lawton) is a fictional antihero appearing in American comic books published by DC Comics. He is primarily an enemy of Batman and sometimes takes the role of a Supervillain.
+            .actor_info.diablo
+              .info
+                h2 Diablo
+                p He doesn’t just control fire, he can become it. He’s not just a soldier, he’s a spiritual warrior. More than a mercenary, he’s a pyrokinetic demigod more interested in justice than revenge.
+            .actor_info.joker
+              .info
+                h2 Joker
+                p Appearing to be the most evil, deranged, and flat out psychotic killer of all comic book villains, The Joker is the primary antagonist of Batman.
+            .actor_info.harley
+              .info
+                h2 Harley
+                p She becomes fascinated with the Joker while interning at Arkham Asylum, and volunteers to analyze him. She immediately falls in love with the Joker during their sessions.
+      .dev(id="de")
+        .dev_overview
+          h2 Development
+          p The film was announced in 2009 with Dan Lin as producer. Stephen Gilchrist as co-producer and Justin Marks as the screenwriter.
+        .content
+          .photo
+            img(src="http://www.vpdaily.com/wp-content/uploads/2016/08/705679.jpg")
+          
+            
+      .box_office(id="box")
+        h2 Box Office
+
+        .map
+          p(class="us") $322,960,679
+          .amout.usa
+          h3 USA
+        .map
+          p(class="ta") $9,500,000
+          .amout.taiwan
+          h3 Taiwan
+        .map
+          p(class="ja") $15,607,713
+          .amout.japan
+          h3 Japan
+          

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie</title>
+    <link rel="stylesheet" href="css/movie.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif|Cabin|Fjalla+One|Open+Sans+Condensed:300">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $(".inner a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 400, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="menu">
+            <div class="link"><a href="index.html">Home</a><a href="resume.html">Resume</a><a href="SuicideSquad.html">Movie</a></div>
+        </div>
+        <div class="head"><a href="#" onclick="window.open(' youtube.html ', 'Youtube', config='height=1000,width=1100')">Watch Trailer</a></div>
+        <div class="inner_menu">
+            <div class="inner"><a href="#sto">Story</a><a href="#cas">Cast</a><a href="#de">Development</a><a href="#box">Box Office</a></div>
+        </div>
+        <div id="sto" class="story"><img src="http://static.srcdn.com/wp-content/uploads/Suicide-Squad-Sucker-For-Pain-artwork.jpg">
+            <h2>Story Line</h2>
+            <p>It feels good to be bad...Assemble a team of the world's most dangerous, incarcerated Super Villains, provide them with the most powerful arsenal at the government's disposal, and send them off on a mission to defeat an enigmatic, insuperable entity. </p>
+        </div>
+        <div id="cas" class="cast">
+            <div class="case_overview">
+                <h2>Cast <br> Overview</h2>
+                <p>Four main actor in the movie,
+                    <br> and thier information.</p>
+            </div>
+            <div class="actor">
+                <div class="show">
+                    <div class="actor_info deadshot">
+                        <div class="info">
+                            <h2>Deadshot</h2>
+                            <p>Deadshot (Floyd Lawton) is a fictional antihero appearing in American comic books published by DC Comics. He is primarily an enemy of Batman and sometimes takes the role of a Supervillain.</p>
+                        </div>
+                    </div>
+                    <div class="actor_info diablo">
+                        <div class="info">
+                            <h2>Diablo</h2>
+                            <p>He doesn’t just control fire, he can become it. He’s not just a soldier, he’s a spiritual warrior. More than a mercenary, he’s a pyrokinetic demigod more interested in justice than revenge.</p>
+                        </div>
+                    </div>
+                    <div class="actor_info joker">
+                        <div class="info">
+                            <h2>Joker</h2>
+                            <p>Appearing to be the most evil, deranged, and flat out psychotic killer of all comic book villains, The Joker is the primary antagonist of Batman.</p>
+                        </div>
+                    </div>
+                    <div class="actor_info harley">
+                        <div class="info">
+                            <h2>Harley</h2>
+                            <p>She becomes fascinated with the Joker while interning at Arkham Asylum, and volunteers to analyze him. She immediately falls in love with the Joker during their sessions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="de" class="dev">
+            <div class="dev_overview">
+                <h2>Development</h2>
+                <p>The film was announced in 2009 with Dan Lin as producer. Stephen Gilchrist as co-producer and Justin Marks as the screenwriter.</p>
+            </div>
+            <div class="content">
+                <div class="photo"><img src="http://www.vpdaily.com/wp-content/uploads/2016/08/705679.jpg"></div>
+            </div>
+        </div>
+        <div id="box" class="box_office">
+            <h2>Box Office</h2>
+            <div class="map">
+                <p class="us">$322,960,679</p>
+                <div class="amout usa"></div>
+                <h3>USA</h3>
+            </div>
+            <div class="map">
+                <p class="ta">$9,500,000</p>
+                <div class="amout taiwan"></div>
+                <h3>Taiwan</h3>
+            </div>
+            <div class="map">
+                <p class="ja">$15,607,713</p>
+                <div class="amout japan"></div>
+                <h3>Japan</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+* {
+  position: relative;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 300;
+}
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  height: 50px;
+  background: #973EAD;
+}
+
+.menu img {
+  height: 100%;
+  width: 5%;
+}
+
+.menu .link {
+  position: absolute;
+  left: 10%;
+  height: 100%;
+  width: 30%;
+  padding: 10px;
+}
+
+.menu .link a {
+  display: inline-block;
+  color: white;
+  margin-left: 30px;
+  font-size: 26px;
+}
+
+.menu .link a:hover {
+  color: #64ea7d;
+  transition-duration: 1s;
+}
+
+.inner_menu {
+  height: 70px;
+  border-bottom: solid 2px #973EAD;
+  padding-bottom: 10px;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inner_menu .inner {
+  position: absolute;
+  width: 100%;
+  left: 10%;
+  top: 20%;
+}
+
+.inner_menu .inner a {
+  display: inline-block;
+  font-size: 30px;
+  margin-right: 12%;
+  color: #973EAD;
+  padding-top: 15px;
+}
+
+.inner_menu .inner a:hover {
+  border-top: solid 3px #8f36aa;
+}
+
+.head {
+  height: 700px;
+  background-image: url("http://fanfest.com/wp-content/uploads/2016/07/Suicide_Squad_Wallpaper_1680x1050.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.head a {
+  display: block;
+  height: 40px;
+  width: 400px;
+  top: 75%;
+  right: -68%;
+  text-align: center;
+  font-size: 30px;
+  background: purple;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Fjalla One", sans-serif;
+  border-radius: 10px;
+}
+
+.story {
+  height: 450px;
+}
+
+.story h2, .story p {
+  position: absolute;
+  width: 600px;
+  right: 5%;
+  letter-spacing: 1px;
+}
+
+.story h2 {
+  top: 20px;
+  font-size: 70px;
+  font-family: "Fjalla One", sans-serif;
+  color: #973EAD;
+  border-left: solid 7px #973EAD;
+  height: 400px;
+  padding-left: 30px;
+}
+
+.story p {
+  height: 200px;
+  top: 40%;
+  line-height: 32px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.story img {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8%;
+  width: 40%;
+  height: 80%;
+}
+
+.cast {
+  height: 750px;
+  background: #973EAD;
+}
+
+.cast .case_overview, .cast .actor {
+  position: absolute;
+  top: 0px;
+}
+
+.cast .case_overview {
+  width: 30%;
+  height: 100%;
+  top: 14%;
+  left: 5%;
+  border-right: solid 7px white;
+}
+
+.cast .case_overview h2 {
+  width: 250px;
+  left: 20%;
+  font-size: 70px;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+}
+
+.cast .case_overview p {
+  font-size: 30px;
+  padding: 10px;
+  left: 20%;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  font-weight: 500;
+}
+
+.cast .actor {
+  width: 70%;
+  height: 100%;
+  left: 30%;
+}
+
+.cast .show {
+  width: 80%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cast .actor_info {
+  display: inline-block;
+  margin-left: 13%;
+  margin-top: 5%;
+  height: 280px;
+  width: 280px;
+  background-size: cover;
+  background-position: center;
+  transition-duration: 1s;
+  border: solid 8px white;
+}
+
+.cast .actor_info .info {
+  position: absolute;
+  top: 70px;
+  width: 90%;
+  height: 90%;
+  padding: 20px;
+  opacity: 0;
+  transition-duration: 1s;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+.cast .actor_info .info p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+}
+
+.cast .actor_info:hover {
+  background: white;
+  transition-duration: 1s;
+}
+
+.cast .actor_info:hover .info {
+  opacity: 1;
+  transition-duration: 1s;
+  top: 0px;
+  color: #973EAD;
+}
+
+.deadshot {
+  background-image: url("http://www.suicidesquad.com/assets/images/cast/downloads/deadshot.jpg");
+}
+
+.diablo {
+  background-image: url("http://www.suicidesquad.com/assets/images/cast/downloads/diablo.jpg");
+}
+
+.joker {
+  background-image: url("http://www.suicidesquad.com/assets/images/cast/downloads/joker.jpg");
+}
+
+.harley {
+  background-image: url("http://www.suicidesquad.com/assets/images/cast/downloads/harley_quinn.jpg");
+}
+
+.dev {
+  height: 550px;
+}
+
+.dev .dev_overview, .dev .content {
+  position: absolute;
+  width: 40%;
+  top: 0px;
+}
+
+.dev .dev_overview p, .dev .content p {
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 32px;
+}
+
+.dev .dev_overview {
+  right: 0px;
+  height: 100%;
+  top: 8%;
+  border-left: solid 7px #973EAD;
+  width: 550px;
+}
+
+.dev .dev_overview h2 {
+  width: 400px;
+  font-size: 70px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Fjalla One", sans-serif;
+  color: #973EAD;
+}
+
+.dev .dev_overview p {
+  width: 480px;
+  left: 70px;
+  letter-spacing: 1px;
+  line-height: 32px;
+}
+
+.dev .content {
+  width: 60%;
+  height: 100%;
+}
+
+.dev .content .photo {
+  height: 100%;
+  border: solid 10px white;
+}
+
+.dev .content .photo img {
+  height: 100%;
+  width: 100%;
+}
+
+.box_office {
+  height: 650px;
+  padding: 20px;
+  background: #973EAD;
+}
+
+.box_office h2 {
+  top: -10px;
+  font-size: 70px;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+  border-bottom: solid 7px white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.box_office .map {
+  width: 20%;
+  display: inline-block;
+  margin-left: -10px;
+  left: 20%;
+  bottom: -200px;
+  text-align: center;
+}
+
+.box_office .map h3 {
+  font-size: 36px;
+  margin-top: 25px;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+}
+
+.box_office .map p {
+  bottom: 20px;
+  opacity: 1;
+  transition-duration: 1.5s;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+}
+
+.box_office .map .amout {
+  width: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  background: white;
+}
+
+.box_office .map .usa, .box_office .map .taiwan, .box_office .map .japan {
+  height: 20px;
+  transition-duration: 1.5s;
+}
+
+.box_office:hover .usa {
+  transform: scaleY(12);
+  transform-origin: 0% 100%;
+  transition-duration: 1.5s;
+  transition-delay: 0.5s;
+}
+
+.box_office:hover .taiwan {
+  transform: scaleY(6);
+  transform-origin: 0% 100%;
+  transition-duration: 1.5s;
+  transition-delay: 0.5s;
+}
+
+.box_office:hover .japan {
+  transform: scaleY(8);
+  transform-origin: 0% 100%;
+  transition-duration: 1.5s;
+  transition-delay: 0.5s;
+}
+
+.box_office:hover .us, .box_office:hover .ta, .box_office:hover .ja {
+  transition-duration: 1.5s;
+  transition-delay: 0.5s;
+}
+
+.box_office:hover .us {
+  bottom: 250px;
+}
+
+.box_office:hover .ta {
+  bottom: 130px;
+}
+
+.box_office:hover .ja {
+  bottom: 170px;
+}

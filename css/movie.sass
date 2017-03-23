@@ -1,0 +1,303 @@
+$font_base: 20px
+$image_size: 280px
+$purple: #973EAD
+$title_font: 'Fjalla One', sans-serif
+$p_font: 'Open Sans Condensed', sans-serif
+$line_height: 32px
+
+@mixin size($h, $w)
+	height: $h
+	width: $w
+*
+	position: relative
+	font-family: $title_font
+	font-weight: 300
+	// border: solid 1px
+html, body
+	padding: 0px
+	margin: 0px
+
+	// width: 100%
+a
+	text-decoration: none
+.page
+	// padding: 60px
+.menu
+	height: 50px
+	background: $purple
+	// border-bottom: solid 5px white
+	& img
+		height: 100%
+		width: 5%
+
+	& .link
+		position: absolute
+		left: 10%
+		+size(100%, 30%)
+		padding: 10px
+
+		& a
+			display: inline-block
+			color: white
+			margin-left: 30px
+			font-size: 26px
+		& a:hover
+			color: #64ea7d
+			transition-duration: 1s
+
+.inner_menu
+	height: 70px
+	border-bottom: solid 2px $purple
+	padding-bottom: 10px
+	width: 60%
+	margin-right: auto
+	margin-left: auto
+
+
+	& .inner
+		position: absolute
+		width: 100%
+		left: 10%
+		top: 20%
+
+		& a
+			display: inline-block
+			font-size: 30px
+			margin-right: 12%
+			color: $purple
+			padding-top: 15px
+		& a:hover
+			border-top: solid 3px #8f36aa
+			
+.head
+	height: 700px
+	background-image: url('http://fanfest.com/wp-content/uploads/2016/07/Suicide_Squad_Wallpaper_1680x1050.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+		
+	& a
+		display: block
+		height: 40px
+		width: 400px
+		top: 75%
+		right: -68%
+		text-align: center
+		font-size: $font_base*1.5
+		background: purple
+		color: white
+		padding-top: 10px
+		padding-bottom: 10px
+		font-family: $title_font
+		border-radius: 10px
+.story
+	height: 450px
+	& h2, & p
+		position: absolute
+		width: 600px
+		right: 5%
+		letter-spacing: 1px
+	& h2
+		top: 20px
+		font-size: $font_base*3.5
+		font-family: $title_font
+		color: $purple
+		border-left: solid 7px $purple
+		height: 400px
+		padding-left: 30px
+	& p
+		height: 200px
+		top: 40%
+		line-height: $line_height
+		font-family: $p_font
+	& img
+		top: 50%
+		transform: translateY(-50%)
+		left: 8%
+		width: 40%
+		height: 80%
+.cast
+	height: 750px
+	background: $purple
+	& .case_overview, .actor
+		position: absolute
+		top: 0px
+
+	& .case_overview
+		width: 30%
+		height: 100%
+		top: 14%
+		left: 5%
+		border-right: solid 7px white
+		& h2
+			width: 250px
+			left: 20%
+			font-size: $font_base*3.5
+			font-family: $title_font
+			color: white
+		& p
+			font-size: $font_base* 1.5
+			padding: 10px
+			left: 20%
+			font-family: $p_font
+			color: white
+			font-weight: 500
+	& .actor
+		width: 70%
+		height: 100%
+		left: 30%
+	& .show
+		width: 80%
+		height: 100%
+		margin-right: auto
+		margin-left: auto
+	& .actor_info
+		display: inline-block
+		margin-left: 13%
+		margin-top: 5%
+		+size($image_size, $image_size)
+		background-size: cover
+		background-position: center
+		transition-duration: 1s
+		border: solid 8px white
+
+		& .info
+			position: absolute
+			top: 70px
+			width: 90%
+			height: 90%
+			padding: 20px
+			opacity: 0
+			transition-duration: 1s
+			color: white
+			letter-spacing: 1px
+			line-height: 24px
+			& p
+				font-family: $p_font
+				font-size: 16px
+	& .actor_info:hover
+		background: white
+		transition-duration: 1s
+		& .info
+			opacity: 1
+			transition-duration: 1s
+			top: 0px
+			color: $purple
+
+.deadshot
+	background-image: url("http://www.suicidesquad.com/assets/images/cast/downloads/deadshot.jpg")	
+.diablo
+	background-image: url("http://www.suicidesquad.com/assets/images/cast/downloads/diablo.jpg")
+.joker
+	background-image: url("http://www.suicidesquad.com/assets/images/cast/downloads/joker.jpg")
+.harley
+	background-image: url("http://www.suicidesquad.com/assets/images/cast/downloads/harley_quinn.jpg")
+
+.dev
+	height: 550px
+	& .dev_overview, & .content
+		position: absolute
+		width: 40%
+		top: 0px
+
+		& p
+			font-family: $p_font
+			line-height: $line_height
+	& .dev_overview
+		right: 0px
+		height: 100%
+		top: 8%
+		border-left: solid 7px $purple
+		width: 550px
+		& h2
+			width: 400px
+			font-size: $font_base*3.5
+			padding: 20px
+			margin-left: auto
+			margin-right: auto
+			font-family: $title_font
+			color: $purple
+		& p
+			width: 480px
+			left: 70px
+			letter-spacing: 1px
+			line-height: $line_height
+	& .content
+		width: 60%
+		height: 100%
+		& .photo
+			height: 100%
+			border: solid 10px white
+			& img
+				height: 100%
+				width: 100%
+
+			
+
+.box_office
+	height: 650px
+	padding: 20px
+	background: $purple
+	& h2
+		top: -10px
+		font-size: $font_base* 3.5
+		text-align: center
+		font-family: $title_font
+		color: white
+		border-bottom: solid 7px white
+		width: 50%
+		margin-left: auto
+		margin-right: auto
+		padding-bottom: 30px
+	& .map
+		width: 20%
+		display: inline-block
+		margin-left: -10px
+		left: 20%
+		bottom: -200px
+		text-align: center
+		& h3
+			font-size: $font_base*1.8
+			margin-top: 25px
+			font-family: $title_font
+			color: white
+		& p
+			bottom: 20px
+			opacity: 1
+			transition-duration: 1.5s
+			font-family: $title_font
+			color: white
+		& .amout
+			width: 40px
+			margin-right: auto
+			margin-left: auto
+			background: white
+			
+		& .usa, & .taiwan, & .japan
+			height: 20px
+			transition-duration: 1.5s
+.box_office:hover
+	& .usa
+		transform: scaleY(12)
+		transform-origin: 0% 100%
+		transition-duration: 1.5s
+		transition-delay: 0.5s
+	& .taiwan
+		transform: scaleY(6)
+		transform-origin: 0% 100%
+		transition-duration: 1.5s
+		transition-delay: 0.5s
+	& .japan
+		transform: scaleY(8)
+		transform-origin: 0% 100%
+		transition-duration: 1.5s
+		transition-delay: 0.5s
+	& .us, .ta, .ja
+		transition-duration: 1.5s
+		transition-delay: 0.5s
+		
+	& .us
+		bottom: 250px
+	& .ta
+		bottom: 130px
+	& .ja
+		bottom: 170px
